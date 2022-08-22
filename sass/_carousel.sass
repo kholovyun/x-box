@@ -1,0 +1,44 @@
+.carousel
+    width: 100%
+.carousel-item
+    position: relative
+.star-wars-block
+    position: absolute
+    top: 35%
+    left: 60% 
+.star-wars-block-title
+    +star__wars__block__title__properties  
+.star-wars-block-subtitle
+    +star__wars__block__subtitle__properties
+.star-wars-block-buttons
+    display: flex
+    text-align: center
+    margin-top: 50px
+.star-wars-block-buttons a
+  +star__wars__block__button__properties
+  transition: 0.6s
+.star-wars-block-buttons a:hover
+  background-color: #8DD83D
+.gold-edition
+    left: 20%
+    top: 35%
+.online
+    left: 10%
+    top: 35%
+    background: #00000049    
+@media screen and (max-width:600px)
+    .star-wars-block
+        left: 10%
+    .star-wars-block-subtitle
+        display: none
+    .star-wars-block-buttons a
+@media screen and (max-width:400px)
+    .star-wars-block
+        left: 10%
+    .online
+        background: 0
+    .star-wars-block-title
+        display: none
+    .star-wars-block-subtitle
+        display: none
+    .star-wars-block-buttons a
